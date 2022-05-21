@@ -13,11 +13,11 @@ The name of the variable is vpc_id it will be used for get the vpc id when they 
 
 To use this kind of variable in the module it's necessary create a instance of the variable on de main.tf, for example:
 
-module "vpc" {
-  source = "git::https://github.com/BrunoHigino06/aws_vpc_module.git"
-
-  vpc = {
-    Name = "Main"
-    cidr_block = "10.0.0.0/16"
-  }
+module "vpc" {<br>
+  source = "git::https://github.com/BrunoHigino06/aws_vpc_module.git"<br>
+<br>
+  vpc = {<br>
+    Name = "Main"<br>
+    cidr_block = "10.0.0.0/16"<br>
+  }<br>
 }
